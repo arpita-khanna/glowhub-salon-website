@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Booking | GlowHub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="images/logo.png" alt="GlowHub Logo">
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="booking-hero">
+
+        <div class="booking-hero-content">
+
+            <h1>Book Your Appointment</h1>
+
+            <p>
+                Reserve your luxury beauty and self-care experience with GlowHub.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- BOOKING SECTION -->
+
+    <section class="booking-section">
+
+        <div class="booking-container">
+
+            <!-- IMAGE -->
+
+            <div class="booking-image">
+
+                <img src="images/book.png" alt="Booking">
+
+            </div>
+
+
+            <!-- FORM -->
+
+            <div class="booking-form-container">
+
+                <h2>Schedule Your Visit</h2>
+
+                <form id="bookingForm">
+
+                    <input type="text"
+                    placeholder="Full Name"
+                    required>
+
+                    <input type="email"
+                    placeholder="Email Address"
+                    required>
+
+                    <input type="tel"
+                    placeholder="Phone Number"
+                    required>
+
+
+                    <!-- SERVICE -->
+
+                    <select required>
+
+                        <option value="">
+                            Select Service
+                        </option>
+
+                        <option>
+                            Hair Spa Therapy
+                        </option>
+
+                        <option>
+                            Hair Coloring
+                        </option>
+
+                        <option>
+                            Keratin Treatment
+                        </option>
+
+                        <option>
+                            Gold Facial
+                        </option>
+
+                        <option>
+                            Hydra Facial
+                        </option>
+
+                        <option>
+                            Beard Grooming
+                        </option>
+
+                        <option>
+                            Classic Manicure
+                        </option>
+
+                    </select>
+
+
+                    <!-- DATE -->
+
+                    <input type="date" required>
+
+
+                    <!-- TIME -->
+
+                    <select required>
+
+    <option value="">
+        Select Time Slot
+    </option>
+
+    <option>
+        10:00 AM
+    </option>
+
+    <option>
+        11:00 AM
+    </option>
+
+    <option>
+        12:00 PM
+    </option>
+
+    <option>
+        1:00 PM
+    </option>
+
+    <option>
+        2:00 PM
+    </option>
+
+    <option>
+        3:00 PM
+    </option>
+
+    <option>
+        4:00 PM
+    </option>
+
+    <option>
+        5:00 PM
+    </option>
+
+    <option>
+        6:00 PM
+    </option>
+
+</select>
+<p class="slot-note">
+    Weekend slots fill quickly. Book early to reserve your preferred appointment time.
+</p>
+
+
+                    <!-- NOTES -->
+
+                    <textarea
+                    placeholder="Special Notes"
+                    rows="5"></textarea>
+
+
+                    <button type="submit">
+                        Confirm Booking
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SUCCESS MESSAGE -->
+
+    <div id="booking-popup" class="booking-popup">
+
+        <div class="popup-content">
+
+            <h2>Appointment Confirmed!</h2>
+
+            <p>
+                Your GlowHub appointment has been booked successfully.
+            </p>
+
+            <button onclick="closePopup()">
+                Close
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <p>© 2026 GlowHub Salon. All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

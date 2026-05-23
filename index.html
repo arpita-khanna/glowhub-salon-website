@@ -7,6 +7,7 @@
 
     <!-- CSS Link -->
     <link rel="stylesheet" href="css/style.css">
+    
 
     <!-- Google Fonts -->
      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,6 +15,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -23,6 +26,7 @@
         <nav class="navbar">
             <div class="logo">
     <img src="images/logo.png" alt="GlowHub Logo">
+
     
     
 </div>
@@ -31,11 +35,31 @@
 </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="booking.html">Booking</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Login</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li id="profileSection" style="display:none;">
+
+    <div class="profile-menu">
+
+        <i class="fa-solid fa-user"></i>
+
+        <div class="dropdown-menu">
+
+            <p id="userEmail"></p>
+
+            <button onclick="logoutUser()">
+                Logout
+            </button>
+
+        </div>
+
+    </div>
+
+</li>
             </ul>
         </nav>
     </header>
@@ -46,7 +70,9 @@
             <h1>Luxury Salon Experience</h1>
             <p>Premium salon services, beauty treatments, and self-care — all in one place.</p>
 
-            <a href="booking.html" class="btn">Book Appointment</a>
+         <button class="book-btn" onclick="openBooking()">
+    Book Appointment
+</button>
         </div>
     </section>
 
@@ -100,6 +126,41 @@
         </p>
     </div>
 </section>
+<!-- STAFF SECTION -->
+
+<div class="staff-section">
+
+    <h3>Meet Our Experts</h3>
+
+    <div class="staff-container">
+
+        <div class="staff-card">
+    <img src="images/staff1.png" alt="Hair Stylist">
+    <h3>Sophia Carter</h3>
+    <p>Senior Hair Stylist</p>
+</div>
+
+<div class="staff-card">
+    <img src="images/staff2.png" alt="Makeup Artist">
+    <h3>Emily Watson</h3>
+    <p>Beauty & Makeup Specialist</p>
+</div>
+
+<div class="staff-card">
+    <img src="images/staff3.png" alt="Male Grooming Expert">
+    <h3>Daniel Brooks</h3>
+    <p>Men's Grooming Expert</p>
+</div>
+
+<div class="staff-card">
+    <img src="images/staff4.png" alt="Nail Artist">
+    <h3>Olivia Brown</h3>
+    <p>Luxury Nail Artist</p>
+</div>
+
+    </div>
+
+</div>
 <section class="why-choose">
     <h2>Why Choose GlowHub?</h2>
 
@@ -127,6 +188,58 @@
 
     </div>
 </section>
+<!-- SPECIAL OFFERS -->
+
+<div class="offers-heading section-title">
+
+    <span>Exclusive GlowHub Deals</span>
+
+    <h2>Special Offers</h2>
+
+    <p>
+        Enjoy premium beauty experiences with luxury salon offers crafted specially for you.
+    </p>
+
+</div>                                                                                                                                                                                                                                                              '''
+'
+
+    <div class="offers-container">
+
+        <div class="offer-card">
+
+            <h3>Student Discount</h3>
+
+            <p>
+                Enjoy 15% OFF on all facial services every Tuesday with valid student ID.
+            </p>
+
+        </div>
+
+        <div class="offer-card">
+
+            <h3>Bridal Beauty Package</h3>
+
+            <p>
+                Book bridal makeup and nail services together to receive 20% OFF.
+            </p>
+
+        </div>
+
+        <div class="offer-card">
+
+            <h3>First Visit Offer</h3>
+
+            <p>
+                New customers receive a complimentary luxury hair consultation.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
 <section class="testimonials">
     <h2>What Our Clients Say</h2>
 

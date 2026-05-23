@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GlowHub Cart</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="images/logo.png" alt="GlowHub Logo">
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="cart-hero">
+
+        <div class="cart-hero-content">
+
+            <h1>Your Cart</h1>
+
+            <p>
+                Review your selected services and products before checkout.
+            </p>
+
+        </div>
+
+    </section>
+
+<section class="cart-page">
+
+    <div class="cart-container">
+
+        <div class="cart-left">
+
+            <h1>Your Cart</h1>
+
+            <p>
+                Review your selected services and products before checkout.
+            </p>
+
+            <div id="cart-items"></div>
+
+            <div id="empty-cart" class="empty-cart">
+
+                <h2>Your cart is empty</h2>
+
+                <p>
+                    Explore our luxury services and premium products
+                    to begin your beauty journey.
+                </p>
+
+                <a href="services.html" class="shop-btn">
+                    Explore Services
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="cart-right">
+
+            <div class="summary-box">
+
+                <h2>Order Summary</h2>
+
+                <div class="summary-row">
+                    <span>Total</span>
+                    <span id="total-price">$0</span>
+                </div>
+
+                <button
+class="checkout-btn"
+onclick="checkout()">
+
+    Proceed to Checkout
+
+</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <p>© 2026 GlowHub Salon. All Rights Reserved.</p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
